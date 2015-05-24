@@ -48,6 +48,8 @@ class SkinResonator extends SkinTemplate {
 		$out->addHeadItem('bgimg', "<style>body {background-color: #102021;" .
 		"background: url('" . $GLOBALS['wgStylePath'] . "/Resonator/resources/bckgrnd.png');}</style>");
 	
+		$out->addHeadItem('font-face', "<link rel=\"stylesheet\" type=\"text/css\" href=\"//fonts.googleapis.com/css?family=Coda\" />");
+	
 	}
 }
 
