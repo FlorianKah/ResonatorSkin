@@ -1,0 +1,85 @@
+/* Table of Contents */
+#toc,
+.toc,
+.mw-warning {
+	border: 1px solid #8cfbf7;	
+	background-color: #19454a;
+	padding: 5px;
+	box-shadow: 0px 0px 6px #8cfbf7;
+	font-size: 95%;
+}
+
+/**
+ * We want to display the ToC element with intrinsic width in block mode. The fit-content
+ * value for width is however not supported by large groups of browsers.
+ *
+ * We use display:table. Even though it should only contain other table-* display
+ * elements, there are no known problems with using this.
+ *
+ * Because IE < 8, FF 2 and other older browsers don't support display:table, we fallback to
+ * using inline-block mode, which features at least intrinsic width, but won't clear preceding
+ * inline elements. In practice inline elements surrounding the TOC are uncommon enough that
+ * this is an acceptable sacrifice.
+ */
+#toc,
+.toc {
+	display: -moz-inline-block;
+	display: inline-block;
+	display: table;
+
+	/* IE7 and earlier */
+	zoom: 1;
+	*display: inline;
+
+	padding: 7px;
+}
+
+/* CSS for backwards-compatibility with cached page renders and creative uses in wikitext */
+table#toc,
+table.toc {
+	border-collapse: collapse;
+}
+/* Remove additional paddings inside table-cells that are not present in <div>s */
+table#toc td,
+table.toc td {
+	padding: 0;
+}
+
+#toc h2,
+.toc h2 {
+	display: inline;
+	border: none;
+	padding: 0;
+	font-size: 100%;
+	font-weight: bold;
+}
+#toc #toctitle,
+.toc #toctitle,
+#toc .toctitle,
+.toc .toctitle {
+	text-align: center;
+}
+#toc ul,
+.toc ul {
+	list-style-type: none;
+	list-style-image: none;
+	margin-left: 0;
+	padding: 0;
+	text-align: left;
+}
+#toc ul ul,
+.toc ul ul {
+	margin: 0 0 0 2em;
+}
+#toc .toctoggle,
+.toc .toctoggle {
+	font-size: 94%;
+}
+
+.toccolours {
+	border: 1px solid #aaa;
+	background-color: #f9f9f9;
+	padding: 5px;
+	font-size: 95%;
+}
+
