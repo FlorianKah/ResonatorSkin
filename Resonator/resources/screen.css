@@ -1,211 +1,4 @@
-/* Table of Contents */
-#toc,
-.toc,
-.mw-warning {
-	border: 1px solid #aaa;
-	background-color: #f9f9f9;
-	padding: 5px;
-	font-size: 95%;
-}
-
-/**
- * We want to display the ToC element with intrinsic width in block mode. The fit-content
- * value for width is however not supported by large groups of browsers.
- *
- * We use display:table. Even though it should only contain other table-* display
- * elements, there are no known problems with using this.
- *
- * Because IE < 8, FF 2 and other older browsers don't support display:table, we fallback to
- * using inline-block mode, which features at least intrinsic width, but won't clear preceding
- * inline elements. In practice inline elements surrounding the TOC are uncommon enough that
- * this is an acceptable sacrifice.
- */
-#toc,
-.toc {
-	display: -moz-inline-block;
-	display: inline-block;
-	display: table;
-
-	/* IE7 and earlier */
-	zoom: 1;
-	*display: inline;
-
-	padding: 7px;
-}
-
-/* CSS for backwards-compatibility with cached page renders and creative uses in wikitext */
-table#toc,
-table.toc {
-	border-collapse: collapse;
-}
-/* Remove additional paddings inside table-cells that are not present in <div>s */
-table#toc td,
-table.toc td {
-	padding: 0;
-}
-
-#toc h2,
-.toc h2 {
-	display: inline;
-	border: none;
-	padding: 0;
-	font-size: 100%;
-	font-weight: bold;
-}
-#toc #toctitle,
-.toc #toctitle,
-#toc .toctitle,
-.toc .toctitle {
-	text-align: center;
-}
-#toc ul,
-.toc ul {
-	list-style-type: none;
-	list-style-image: none;
-	margin-left: 0;
-	padding: 0;
-	text-align: left;
-}
-#toc ul ul,
-.toc ul ul {
-	margin: 0 0 0 2em;
-}
-#toc .toctoggle,
-.toc .toctoggle {
-	font-size: 94%;
-}
-
-.toccolours {
-	border: 1px solid #aaa;
-	background-color: #f9f9f9;
-	padding: 5px;
-	font-size: 95%;
-}
-
 /* Page layout */
-
-#pagehistory li.selected, .editform, .mw-content-text {
-	background-color: #19454a;
-	border-color: #8cfbf7;
-}
-
-.mw-plusminus-pos {
-	color: #8cfbbd;
-}
-
-.mw-plusminus-neg {
-	color: #f88bf5;
-}
-
-table {
-	display: table;
-	border-collapse: separate;
-	border-spacing: 2px;
-	border-color: #8cfbf7;
-}
-
-fieldset {
-	border-color: #8cfbf7;
-}
-
-table.wikitable, table.mw-datatable {
-	margin: 1em 0;
-	background-color: #19454a;
-	border-collapse: collapse;
-	color: #8cfbf7;
-}
-
-table.wikitable > tr > th, table.wikitable > * > tr > th, .mw-datatable th, .mw-datatable tr {
-	background-color: #307674;
-	border: 1px #8cfbf7 solid;
-	box-shadow: 0px 0px 6px #8cfbf7;
-}
-
-table.wikitable > td > td, table.wikitable > * > tr > td, .mw-datatable td {
-	border: 1px #8cfbf7 solid;
-	box-shadow: 0px 0px 6px #8cfbf7;
-	background-color: #19454a;
-}
-
-table.wikitable a {
-	text-decoration: underline;
-}
-
-.mw-datatable tr:hover td {
-	/*background-color:#559997;*/
-	background-color: #307674;
-}
-
-code {
-	background-color: #19454a;
-}
-
-.editOptions, .jsprefs {
-	background-color: #19454a !important;;
-	border: 1px solid #8cfbf7;
-}
-
-#preftoc li.selected {
-	border: 1px solid #8cfbf7;
-	border-bottom: none;			
-	background-color: #19454a;
-}
-
-#preftoc {
-	background-image: none !important;
-}
-
-#preftoc li:first-child {
-  margin-left: 0px !important;
-}
-
-#preftoc li.selected a, #preftoc a, #preftoc a:active {
-	background-image: none !important;	
-	color: #8cfbf7 !important;
-}
-
-#preftoc li, #preftoc a:active, ul.preftoc {
-	background-image: none !important;
-	background: none;
-	/*background-color: #559997;*/
-	background-color: #307674;
-	color: #8cfbf7 !important;
-}
-
-table.diff, td.diff-otitle, td.diff-ntitle {
-	background-color: #19454a;
-}
-
-#toc, .toc, .mw-warning {
-	background-color: #19454a;
-	border: 1px solid #8cfbf7;	
-	box-shadow: 0px 0px 6px #8cfbf7;
-}
-
-div.thumbinner {
-	background: none; 
-}
-
-td.diff-context {
-	color: #c0c0c0;
-	background: none; 
-}
-
-td.diff-deletedline {
-	border-color: #E40000;
-}
-
-del.diffchange.diffchange-inline {
-	background-color: #E40000;
-}
-
-td.diff-addedline {
-	border-color: #C124E0;
-}
-
-ins.diffchange.diffchange-inline {
-	background-color: #C124E0;
-}
 
 html,
 body {
@@ -234,45 +27,6 @@ h1, h2, h3, h4, h5, h6 {
 	border-bottom: 1px solid #8cfbf7;
 }
 
-.mw-portlet h3 {
-	color: #8cfbf7;
-	border: 1px solid #8cfbf7;
-	background-color: #19454a;
-	padding-left: 0.2em;
-	padding-right: 0.2em;
-	text-decoration: none;
-}
-
-.mw-portlet h3 a:visited, .mw-portlet h3 a{
-	color: #8cfbf7;
-}
-
-.mw-portlet:hover ul {
-	display:block;  
-	z-index:500;
-}
-
-h3 a:hover {
-	text-decoration: none;
-	cursor:default;
-}
-
-.mw-portlet ul {
-	text-align: left;
-	font-size: smaller;
-	list-style-type: none;
-	padding-left: 5px;
-	border: 1px solid #8cfbf7;
-	background-color: black;
-	margin-top: -19px;
-    display:none;
-	box-shadow: 0px 0px 6px #8cfbf7;
-}
-  
-td.htmlform-tip {
-	color: #8cfbf7;
-}
-
 a, .mw-body a.external, #p-personal a.new {
 	color: #8cfbf7;
 	background: none;
@@ -280,8 +34,6 @@ a, .mw-body a.external, #p-personal a.new {
 
 a[href^="http://www.nianticproject.com/"].external {
 	/*background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARBAMAAADwJOuSAAAAMFBMVEUEBgkdqN191fUHV3XN7/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCCcTAAAAAEHRSTlMA////////////////////wFCLQwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAFtJREFUeNoljssNwDAIQ6myQJ2yQCwGaFdA7D9T+cDBT2BhRES+V7ounta1w59RsyIYs/2WfTbJSGBU1SQY3sA0N6hae6w2BY7wmsCO9p2FgE4GJivTgXlj/vkBpn0Pa/f9E5sAAAAASUVORK5CYII=) no-repeat top right !important;
-	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOBAMAAADpk+DfAAAAMFBMVEUEBgwcnuQEbZm86vwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPgdx5AAAAEHRSTlMA////////////////////wFCLQwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAEBJREFUeNo1zNENwEAIAlDiBpQFdATq/rtVcz1/XgwBAJGYC3KM6naimm5CD1mGZHlRLxudb3nl4S9MXc47dqY/oYwIi5EsS5EAAAAASUVORK5CYII=) no-repeat top right !important;
-	background: url(data:image/svg+xml,%3Csvg%20viewBox%3D%2240%200%2080%2091.5%22%20width%3D%222%25%22%20height%3D%222%25%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22x200Y200%20meet%22%3E%3Cpath%20fill%3D%22%2329aae2%22%20d%3D%22m40%200l40%2023v45.5l-40%2023-40-23v-45.5z%22%2F%3E%3Cpath%20fill%3D%22%2379d0f2%22%20d%3D%22m40%204l36%2020.8v41.6l-28.37%2016.392-2.585-40.704-30.956-23.117%2025.911-14.971z%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%224%22%3E%3Cpath%20d%3D%22m40%2011l30%2017.3v34.6l-30%2017.3-30-17.3v-34.6zm0%2056.6l20-33.8h-40z%22%2F%3E%3Cpath%20id%3D%22i%22%20d%3D%22m40%2011v15.5m0%2017.5v20%22%2F%3E%3Cuse%20xlink%3Ahref%3D%22%23i%22%20transform%3D%22rotate(120%2C40%2C45)%22%2F%3E%3Cuse%20xlink%3Ahref%3D%22%23i%22%20transform%3D%22rotate(-120%2C40%2C45)%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E) no-repeat top right !important;
 */	background: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgODAgOTEuNSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjE0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4MjAwWTIwMCBtZWV0Ij48cGF0aCBmaWxsPSIjMjlhYWUyIiBkPSJtNDAgMGw0MCAyM3Y0NS41bC00MCAyMy00MC0yM3YtNDUuNXoiLz48cGF0aCBmaWxsPSIjNzlkMGYyIiBkPSJtNDAgNGwzNiAyMC44djQxLjZsLTI4LjM3IDE2LjM5Mi0yLjU4NS00MC43MDQtMzAuOTU2LTIzLjExNyAyNS45MTEtMTQuOTcxeiIvPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI0Ij48cGF0aCBkPSJtNDAgMTFsMzAgMTcuM3YzNC42bC0zMCAxNy4zLTMwLTE3LjN2LTM0LjZ6bTAgNTYuNmwyMC0zMy44aC00MHoiLz48cGF0aCBpZD0iaSIgZD0ibTQwIDExdjE1LjVtMCAxNy41djIwIi8+PHVzZSB4bGluazpocmVmPSIjaSIgdHJhbnNmb3JtPSJyb3RhdGUoMTIwLDQwLDQ1KSIvPjx1c2UgeGxpbms6aHJlZj0iI2kiIHRyYW5zZm9ybT0icm90YXRlKC0xMjAsNDAsNDUpIi8+PC9nPjwvc3ZnPg==) no-repeat top right !important;
 	padding-right: 14px !important;
 	margin-right: 4px;
@@ -342,14 +94,55 @@ a.stub, a.new {
 	width: 100%;
 }
 
+#pagehistory li.selected, .editform, .mw-content-text {
+	background-color: #19454a;
+	border-color: #8cfbf7;
+}
+
+.mw-plusminus-pos {
+	color: #8cfbbd;
+}
+
+.mw-plusminus-neg {
+	color: #f88bf5;
+}
+
+fieldset {
+	border-color: #8cfbf7;
+}
+
+code {
+	background-color: #19454a;
+}
+
+
+/* Footer */
+
+#mw-footer {
+	clear: both;
+/*	border-top: 1px solid black;
+	margin-top: 1em;
+	padding: 1em;*/
+}
+
+#mw-footer ul {
+	list-style-type: none;
+	padding: 0em;
+	padding-top: 5px;
+}
+
+#mw-footer ul li {
+	display: inline-block;
+	padding: 0em;
+	margin-right: 5em;
+}
+
+/* User Preferences und Menu */
+
 #p-logo {
 	width: 10em;
 	clear: left;
 	float: left;
-}
-
-#mw-navigation {
-	
 }
 
 #p-personal {
@@ -392,10 +185,6 @@ a.stub, a.new {
 	text-align: right;
 }
 
-/*#p-personal h3 {
-	top: 0px;
-}
-*/
 #p-logo {
 	text-align: center;
 }
@@ -410,27 +199,71 @@ div.jsprefs {
 	background-color: #19454a;
 }
 
-/* Search form and personal menu in top-right corner */
-
-/* Footer */
-
-#mw-footer {
-	clear: both;
-/*	border-top: 1px solid black;
-	margin-top: 1em;
-	padding: 1em;*/
+.mw-portlet h3 {
+	color: #8cfbf7;
+	border: 1px solid #8cfbf7;
+	background-color: #19454a;
+	padding-left: 0.2em;
+	padding-right: 0.2em;
+	text-decoration: none;
 }
 
-#mw-footer ul {
+.mw-portlet h3 a:visited, .mw-portlet h3 a{
+	color: #8cfbf7;
+}
+
+.mw-portlet:hover ul {
+	display:block;  
+	z-index:500;
+}
+
+.editOptions, .jsprefs {
+	background-color: #19454a !important;;
+	border: 1px solid #8cfbf7;
+}
+
+h3 a:hover {
+	text-decoration: none;
+	cursor:default;
+}
+
+.mw-portlet ul {
+	text-align: left;
+	font-size: smaller;
 	list-style-type: none;
-	padding: 0em;
-	padding-top: 5px;
+	padding-left: 5px;
+	border: 1px solid #8cfbf7;
+	background-color: black;
+	margin-top: -19px;
+    display:none;
+	box-shadow: 0px 0px 6px #8cfbf7;
+}
+  
+#preftoc li.selected {
+	border: 1px solid #8cfbf7;
+	border-bottom: none;			
+	background-color: #19454a;
 }
 
-#mw-footer ul li {
-	display: inline-block;
-	padding: 0em;
-	margin-right: 5em;
+#preftoc {
+	background-image: none !important;
+}
+
+#preftoc li:first-child {
+  margin-left: 0px !important;
+}
+
+#preftoc li.selected a, #preftoc a, #preftoc a:active {
+	background-image: none !important;	
+	color: #8cfbf7 !important;
+}
+
+#preftoc li, #preftoc a:active, ul.preftoc {
+	background-image: none !important;
+	background: none;
+	/*background-color: #559997;*/
+	background-color: #307674;
+	color: #8cfbf7 !important;
 }
 
 /* Hide some headings, but keep them accessible for screen-readers */
@@ -490,41 +323,6 @@ table.mw_metadata td, table.mw_metadata th {
 
 textarea#wpInput, textarea#output {
 	width:65em;
-}
-
-/* End of fixes*/
-
-/* Custom Styles */
-
-.headline a, .headline a:hover, .headline a:visited, .headline a.external:visited, .headline {
-	color: #FFEDB4;
-	margin:0.3em;
-	text-align:center;
-}
-
-.infotable td, .infotable th {
-	box-shadow: 0px 0px 10px #8cfbf7;
-	border: 2px solid #8cfbf7;
-	border-top: 0px;
-	padding: 1px;
-	text-shadow: 0 0 3px #70E0E0;
-	text-align:center;
-	font-size:1.25em;
-	font-weight:400; 
-}
-
-.infotable th {
-	background-color:#559997;
-}
-
-.navbox, .redirectMsg {
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #19454B;
-	border-style: solid;
-	border-width: 2px;
-	padding-top: 5px;
 }
 
 div#contentSub p {
