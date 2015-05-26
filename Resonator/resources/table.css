@@ -1,0 +1,66 @@
+/* Tables and custom Table Layout */
+
+table {
+	display: table;
+	border-collapse: separate;
+	border-spacing: 2px;
+	border-color: #8cfbf7;
+}
+
+table.wikitable, table.mw-datatable {
+	margin: 1em 0;
+	background-color: #19454a;
+	border-collapse: collapse;
+	color: #8cfbf7;
+}
+
+table.wikitable > tr > th, table.wikitable > * > tr > th, .mw-datatable th, .mw-datatable tr {
+	background-color: #307674;
+	border: 1px #8cfbf7 solid;
+	box-shadow: 0px 0px 6px #8cfbf7;
+}
+
+table.wikitable > td > td, table.wikitable > * > tr > td, .mw-datatable td {
+	border: 1px #8cfbf7 solid;
+	box-shadow: 0px 0px 6px #8cfbf7;
+	background-color: #19454a;
+}
+
+table.wikitable a {
+	text-decoration: underline;
+}
+
+.mw-datatable tr:hover td {
+	/*background-color:#559997;*/
+	background-color: #307674;
+}
+
+table.diff, td.diff-otitle, td.diff-ntitle {
+	background-color: #19454a;
+}
+
+td.diff-context {
+	color: #c0c0c0;
+	background: none; 
+}
+
+td.diff-deletedline {
+	border-color: #E40000;
+}
+
+del.diffchange.diffchange-inline {
+	background-color: #E40000;
+}
+
+td.diff-addedline {
+	border-color: #C124E0;
+}
+
+ins.diffchange.diffchange-inline {
+	background-color: #C124E0;
+}
+
+td.htmlform-tip {
+	color: #8cfbf7;
+}
+
