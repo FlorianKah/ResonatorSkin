@@ -1,0 +1,36 @@
+/* Custom Styles */
+
+.headline a, .headline a:hover, .headline a:visited, .headline a.external:visited, .headline {
+	color: #FFEDB4;
+	margin:0.3em;
+	text-align:center;
+}
+
+.infotable td, .infotable th {
+	color: #8cfbf7;
+	background-color: #19454a;
+	text-shadow: 0 0 3px #70E0E0;
+	text-align:center;
+	font-size:1.25em;
+	font-weight:400;
+	box-shadow: 0px 0px 10px #8cfbf7;
+	border: 2px solid #8cfbf7;
+	border-spacing: 0px;
+	border-top: 0px;
+	padding: 1px;
+	clear:both;
+}
+
+.infotable th {
+	background-color:#559997;
+}
+
+.navbox, .redirectMsg {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #19454B;
+	border-style: solid;
+	border-width: 2px;
+	padding-top: 5px;
+}
