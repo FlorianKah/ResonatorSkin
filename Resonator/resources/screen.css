@@ -1,7 +1,3 @@
-/**
- * Basic styling for the Example skin.
- */
-
 /* Table of Contents */
 #toc,
 .toc,
@@ -282,6 +278,21 @@ a, .mw-body a.external, #p-personal a.new {
 	background: none;
 }
 
+a[href^="http://www.nianticproject.com/"].external {
+	/*background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARBAMAAADwJOuSAAAAMFBMVEUEBgkdqN191fUHV3XN7/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABCCcTAAAAAEHRSTlMA////////////////////wFCLQwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAFtJREFUeNoljssNwDAIQ6myQJ2yQCwGaFdA7D9T+cDBT2BhRES+V7ounta1w59RsyIYs/2WfTbJSGBU1SQY3sA0N6hae6w2BY7wmsCO9p2FgE4GJivTgXlj/vkBpn0Pa/f9E5sAAAAASUVORK5CYII=) no-repeat top right !important;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAOBAMAAADpk+DfAAAAMFBMVEUEBgwcnuQEbZm86vwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPgdx5AAAAEHRSTlMA////////////////////wFCLQwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAEBJREFUeNo1zNENwEAIAlDiBpQFdATq/rtVcz1/XgwBAJGYC3KM6naimm5CD1mGZHlRLxudb3nl4S9MXc47dqY/oYwIi5EsS5EAAAAASUVORK5CYII=) no-repeat top right !important;
+	background: url(data:image/svg+xml,%3Csvg%20viewBox%3D%2240%200%2080%2091.5%22%20width%3D%222%25%22%20height%3D%222%25%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20preserveAspectRatio%3D%22x200Y200%20meet%22%3E%3Cpath%20fill%3D%22%2329aae2%22%20d%3D%22m40%200l40%2023v45.5l-40%2023-40-23v-45.5z%22%2F%3E%3Cpath%20fill%3D%22%2379d0f2%22%20d%3D%22m40%204l36%2020.8v41.6l-28.37%2016.392-2.585-40.704-30.956-23.117%2025.911-14.971z%22%2F%3E%3Cg%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%224%22%3E%3Cpath%20d%3D%22m40%2011l30%2017.3v34.6l-30%2017.3-30-17.3v-34.6zm0%2056.6l20-33.8h-40z%22%2F%3E%3Cpath%20id%3D%22i%22%20d%3D%22m40%2011v15.5m0%2017.5v20%22%2F%3E%3Cuse%20xlink%3Ahref%3D%22%23i%22%20transform%3D%22rotate(120%2C40%2C45)%22%2F%3E%3Cuse%20xlink%3Ahref%3D%22%23i%22%20transform%3D%22rotate(-120%2C40%2C45)%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E) no-repeat top right !important;
+*/	background: url(data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgODAgOTEuNSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjE0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4MjAwWTIwMCBtZWV0Ij48cGF0aCBmaWxsPSIjMjlhYWUyIiBkPSJtNDAgMGw0MCAyM3Y0NS41bC00MCAyMy00MC0yM3YtNDUuNXoiLz48cGF0aCBmaWxsPSIjNzlkMGYyIiBkPSJtNDAgNGwzNiAyMC44djQxLjZsLTI4LjM3IDE2LjM5Mi0yLjU4NS00MC43MDQtMzAuOTU2LTIzLjExNyAyNS45MTEtMTQuOTcxeiIvPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI0Ij48cGF0aCBkPSJtNDAgMTFsMzAgMTcuM3YzNC42bC0zMCAxNy4zLTMwLTE3LjN2LTM0LjZ6bTAgNTYuNmwyMC0zMy44aC00MHoiLz48cGF0aCBpZD0iaSIgZD0ibTQwIDExdjE1LjVtMCAxNy41djIwIi8+PHVzZSB4bGluazpocmVmPSIjaSIgdHJhbnNmb3JtPSJyb3RhdGUoMTIwLDQwLDQ1KSIvPjx1c2UgeGxpbms6aHJlZj0iI2kiIHRyYW5zZm9ybT0icm90YXRlKC0xMjAsNDAsNDUpIi8+PC9nPjwvc3ZnPg==) no-repeat top right !important;
+	padding-right: 14px !important;
+	margin-right: 4px;
+}
+
+a[href^="https://plus.google.com/"].external, a[href^="http://goo.gl/"].external {
+	background: url(data:image/gif;base64,R0lGODlhDgAOALMAAMFBM+zMyNpnVwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAOAA4AAwQwEMhJqwgYCxk2uMLVTSNQih+4lWaXvV5LetrHnjAV6ljlt4Gf7RX07YZFISepvPgiADs) no-repeat right !important;
+	padding-right: 16px !important;
+	margin-right: 4px;
+}
+
 a {
 	text-decoration: none;
 }
@@ -302,12 +313,6 @@ a.stub, a.new {
 	color: #E40000;
 }
 
-.headline a, .headline a:hover, .headline a:visited, .headline a.external:visited, .headline {
-	color: #FFEDB4;
-	margin:0.3em;
-	text-align:center;
-}
-
 .catlinks {
 	clear: both;
 	background: none;
@@ -319,7 +324,7 @@ a.stub, a.new {
 .mw-body a.external {
 	background-position: center right;
 	background-repeat: no-repeat;
-	background-image: url(http://ingresswiki.de/skins/vector/images/external-link-ltr-icon.png?2014-06-25T21:28:20Z);
+	background-image: url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%3E%3Cg%20transform%3D%22translate%28-826.429%20-698.791%29%22%3E%3Crect%20width%3D%225.982%22%20height%3D%225.982%22%20x%3D%22826.929%22%20y%3D%22702.309%22%20fill%3D%22%23fff%22%20stroke%3D%22%2306c%22%2F%3E%3Cg%3E%3Cpath%20d%3D%22M831.194%20698.791h5.234v5.391l-1.571%201.545-1.31-1.31-2.725%202.725-2.689-2.689%202.808-2.808-1.311-1.311z%22%20fill%3D%22%2306f%22%2F%3E%3Cpath%20d%3D%22M835.424%20699.795l.022%204.885-1.817-1.817-2.881%202.881-1.228-1.228%202.881-2.881-1.851-1.851z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E);
 	padding-right: 13px;
 }
 
@@ -407,25 +412,6 @@ div.jsprefs {
 
 /* Search form and personal menu in top-right corner */
 
-/*
-#p-personal {
-	position: absolute;
-	top: 3em;
-	right: 1em;
-	width: 46em;
-	text-align: right;
-}
-
-#p-personal ul {
-	list-style-type: none;
-	margin: 0;
-}
-
-#p-personal ul li {
-	display: inline-block;
-	margin-right: 1em;
-}
-*/
 /* Footer */
 
 #mw-footer {
@@ -510,6 +496,12 @@ textarea#wpInput, textarea#output {
 
 /* Custom Styles */
 
+.headline a, .headline a:hover, .headline a:visited, .headline a.external:visited, .headline {
+	color: #FFEDB4;
+	margin:0.3em;
+	text-align:center;
+}
+
 .infotable td, .infotable th {
 	box-shadow: 0px 0px 10px #8cfbf7;
 	border: 2px solid #8cfbf7;
@@ -525,7 +517,7 @@ textarea#wpInput, textarea#output {
 	background-color:#559997;
 }
 
-.navbox {
+.navbox, .redirectMsg {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
@@ -533,6 +525,34 @@ textarea#wpInput, textarea#output {
 	border-style: solid;
 	border-width: 2px;
 	padding-top: 5px;
+}
+
+div#contentSub p {
+	/*margin-bottom: -1em;*/
+	margin-top: -1em;
+}
+
+.redirectText {
+	margin: 6px !important;
+}
+
+.mw-content-ltr .redirectText li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAUBAMAAAAJnbK1AAAAMFBMVEUEAgQ0/vxwOf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADTu/icAAAAEHRSTlMA////////////////////wFCLQwAAAAlwSFlzAAALEwAACxMBAJqcGAAAACVJREFUeNpjYBhcgFEAq6igAFZRVGEgHwoECIpiNwGvbQKDKZwA0p0CIVoKnt4AAAAASUVORK5CYII=) left no-repeat !important;
+}  
+
+
+.redirectMsg {
+	padding-top: 0px;
+	padding-bottom: 8px;
+}
+
+.redirectMsg p {
+  overflow: visible;
+  height: 0;
+  margin: 0.5em 0em 2em 1em;
 }
 
 /* thumbnails */
