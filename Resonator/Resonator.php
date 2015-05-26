@@ -38,7 +38,10 @@ $wgDefaultUserOptions['cols'] = 134;	// Since the Navigation Bar is on top, we h
 
 $wgResourceModules['skins.resonator.styles'] = array(
 	'styles' => array(
-		'Resonator/resources/screen.css'
+		'Resonator/resources/screen.css' => array( 'media' => 'screen' ),
+		'Resonator/resources/custom.css' => array( 'media' => 'screen' ),
+		'Resonator/resources/table.css' => array( 'media' => 'screen' ),
+		'Resonator/resources/toc.css' => array( 'media' => 'screen' ),
 	),
 	'remoteBasePath' => &$GLOBALS['wgStylePath'],
 	'localBasePath' => &$GLOBALS['wgStyleDirectory'],
