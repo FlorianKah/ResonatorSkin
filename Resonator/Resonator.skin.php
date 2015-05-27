@@ -30,26 +30,26 @@ class SkinResonator extends SkinTemplate {
 
 		$out->addHeadItem( 'analytics',
 				'<script type="text/javascript">'."
-		
+
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-0000000-00']);
   _gaq.push(['_setDomainName', 'yourdomain.com/with-no-http://']);
   _gaq.push(['_setAllowHash', 'false']);
   _gaq.push(['_trackPageview']);
-		
+
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-		
+
 </script>"
 		);
 		$out->addHeadItem('bgimg', "<style>body {background-color: #102021;" .
-		"background: url('" . $GLOBALS['wgStylePath'] . "/Resonator/resources/bckgrnd.png');}</style>");
-	
+		"background: url('" . $GLOBALS['wgStylePath'] . "/Resonator/resources/bckgr.png');}</style>");
+
 		$out->addHeadItem('font-face', "<link rel=\"stylesheet\" type=\"text/css\" href=\"//fonts.googleapis.com/css?family=Coda\" />");
-	
+
 	}
 }
 
@@ -104,7 +104,7 @@ class ResonatorTemplate extends BaseTemplate {
 	 * Outputs the entire contents of the page
 	 */
 	public function execute() {
-		
+
 		$this->html( 'headelement' ) ?>
 		<div id="mw-wrapper">
 			<a
@@ -186,7 +186,7 @@ class ResonatorTemplate extends BaseTemplate {
 					'headerMessage' => 'res-namespace',
 					'content' =>$this->data['content_actions']
 				) );
-				
+
 				foreach ( $this->getSidebar() as $boxName => $box ) {
 					$this->outputPortlet( $box );
 				}
