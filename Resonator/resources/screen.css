@@ -90,7 +90,7 @@ a.stub, a.new {
 	margin-left: -1em;
 	padding: 0em 1em 2em 1em;
 	float: left;
-	background-color: #102021;
+	background-color: rgba(16, 32, 33, 0.95);;
 	width: 100%;
 }
 
@@ -119,10 +119,11 @@ code {
 /* Footer */
 
 #mw-footer {
-	clear: both;
-/*	border-top: 1px solid black;
-	margin-top: 1em;
-	padding: 1em;*/
+  clear: both;
+  background-color: rgba(16, 32, 33, 0.9);
+  margin: -16px;
+  padding-left: 15px;
+  padding-bottom: 2px;
 }
 
 #mw-footer ul {
