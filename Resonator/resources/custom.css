@@ -34,3 +34,28 @@
 	border-width: 2px;
 	padding-top: 5px;
 }
+
+#RESlost, #RESwon {
+	color:#76DDFF;
+	text-align:center;
+}
+
+#RESwon {
+	background-color:#4E55E0;
+}
+
+#ENLlost, #ENLwon {
+	color:#7EFF7B;
+	text-align:center;
+}
+
+#ENLwon {
+	background-color:#4FA100;
+}
+
+.fancy {
+	margin: 1%;
+	box-sizing: border-box;
+	border-radius: 50% 50%;
+	box-shadow: black 0px 0px 5px;
+}
