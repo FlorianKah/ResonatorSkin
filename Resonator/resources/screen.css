@@ -90,7 +90,8 @@ a.stub, a.new {
 	margin-left: -1em;
 	padding: 0em 1em 2em 1em;
 	float: left;
-	background-color: rgba(16, 32, 33, 0.95);;
+	background-color: #102021; /*IE8 backwards compatible*/
+	background-color: rgba(16, 32, 33, 0.95) !important;
 	width: 100%;
 }
 
@@ -139,6 +140,55 @@ code {
 }
 
 /* User Preferences und Menu */
+
+#preftoc li.selected {
+	border: 1px solid #559997;
+	border-bottom: none;			
+	background-color: #19454a;
+}
+
+#preftoc {
+	width: 100%;
+	float: left;
+	clear: both;
+	background-image: none !important;
+}
+
+#preftoc li {
+	border: 1px solid #559997;
+	float: left;
+	list-style-type: none;
+	padding: 0px 7px 0px 7px;
+	position: relative;
+	top: -39px;
+	left: -40px;
+}
+
+#preftoc li:first-child {
+	margin-left: 0px !important;
+}
+
+#preftoc li.selected a, #preftoc a, #preftoc a:active {
+	background-image: none !important;	
+	color: #8cfbf7 !important;
+}
+
+#preftoc li, #preftoc a:active, ul.preftoc {
+	background-image: none !important;
+	background: none;
+	background-color: #307674;
+	color: #8cfbf7 !important;
+}
+
+.prefsection {
+	position: relative;
+	top: -2em;
+}
+
+#mw-prefs-form {
+	top: 12px;
+	position: relative;
+}
 
 #p-logo {
 	width: 10em;
@@ -236,37 +286,10 @@ h3 a:hover {
 	border: 1px solid #8cfbf7;
 	background-color: black;
 	margin-top: -19px;
-    display:none;
+	display:none;
 	box-shadow: 0px 0px 6px #8cfbf7;
 }
   
-#preftoc li.selected {
-	border: 1px solid #8cfbf7;
-	border-bottom: none;			
-	background-color: #19454a;
-}
-
-#preftoc {
-	background-image: none !important;
-}
-
-#preftoc li:first-child {
-  margin-left: 0px !important;
-}
-
-#preftoc li.selected a, #preftoc a, #preftoc a:active {
-	background-image: none !important;	
-	color: #8cfbf7 !important;
-}
-
-#preftoc li, #preftoc a:active, ul.preftoc {
-	background-image: none !important;
-	background: none;
-	/*background-color: #559997;*/
-	background-color: #307674;
-	color: #8cfbf7 !important;
-}
-
 /* Hide some headings, but keep them accessible for screen-readers */
 /* Fixes for problems */
 #mw-navigation h2,
