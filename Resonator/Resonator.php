@@ -22,11 +22,11 @@ $wgExtensionCredits['skin'][] = array(
 		'path' => __FILE__,
 		'name' => 'Resonator', // name as shown under [[Special:Version]]
 		'namemsg' => 'skinname-resonator', // used since MW 1.24, see the section on "Localisation messages" below
-		'version' => '0.8 alpha',
-		'url' => 'https://www.mediawiki.org/',
-		'author' => '[https://mediawiki.org/ Florian K]',
+		'version' => '1.0',
+		'url' => 'http://floriankah.github.io/ResonatorSkin/',
+		'author' => 'Florian K',
 		'descriptionmsg' => 'resonator-desc', // see the section on "Localisation messages" below
-		'license' => 'GPL-2.0+'
+		'license' => 'copyright'
 );
 
 $wgValidSkinNames['resonator'] = 'Resonator';
@@ -38,10 +38,17 @@ $wgDefaultUserOptions['cols'] = 134;	// Since the Navigation Bar is on top, we h
 
 $wgResourceModules['skins.resonator.styles'] = array(
 	'styles' => array(
-		'Resonator/resources/screen.css' => array( 'media' => 'screen' ),
-		'Resonator/resources/custom.css' => array( 'media' => 'screen' ),
-		'Resonator/resources/table.css' => array( 'media' => 'screen' ),
 		'Resonator/resources/toc.css' => array( 'media' => 'screen' ),
+		'Resonator/resources/table.css' => array( 'media' => 'screen' ),
+		'Resonator/resources/custom.css' => array( 'media' => 'screen' ),
+		'Resonator/resources/screen.css' => array( 'media' => 'screen' ),
+				
+		'Resonator/resources/custom320.css' => array( 'media' => 'screen and (min-width:320px) and (max-width:1014px)' ),
+		'Resonator/resources/screen320.css' => array( 'media' => 'screen and (min-width:320px) and (max-width:1014px)' ),
+		/*'Resonator/resources/table320.css' => array( 'media' => 'screen and (min-width:320px) and (max-width:1014px)' ),*/
+
+		'Resonator/resources/custom.css' => array( 'media' => 'screen and (min-width:1015px)' ),
+
 	),
 	'remoteBasePath' => &$GLOBALS['wgStylePath'],
 	'localBasePath' => &$GLOBALS['wgStyleDirectory'],
