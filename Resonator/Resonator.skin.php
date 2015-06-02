@@ -45,10 +45,11 @@ class SkinResonator extends SkinTemplate {
 
 </script>"
 		);
-		$out->addHeadItem('bgimg', "<style>body {background-color: #102021;" .
+/*		$out->addHeadItem('bgimg', "<style>body {background-color: #102021;" .
 		"background: url('" . $GLOBALS['wgStylePath'] . "/Resonator/resources/bckgr.png');}</style>");
-
+*/
 		$out->addHeadItem('font-face', "<link rel=\"stylesheet\" type=\"text/css\" href=\"//fonts.googleapis.com/css?family=Coda\" />");
+		$out->addHeadItem('responsive', "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">");
 
 	}
 }
@@ -76,8 +77,8 @@ class ResonatorTemplate extends BaseTemplate {
 			id="<?php echo Sanitizer::escapeId( $box['id'] ) ?>"
 			<?php echo Linker::tooltip( $box['id'] ) ?>
 		>
-			<h3><a href="">
-				<?php
+			<h3><a href="javascript:"> 
+				<?php // Trick to have drop-down boxes
 				if ( isset( $box['headerMessage'] ) ) {
 					$this->msg( $box['headerMessage'] );
 				} else {
