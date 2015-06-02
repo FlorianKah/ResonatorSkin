@@ -5,14 +5,14 @@ body {
 	font-family: 'Coda', Arial, sans-serif;
 	margin: 0;
 	padding: 0;
-	background-color: #102021;
-	background: url(bckgr.png);
 	color: #c0c0c0;
+	background: url(bckgr.gif);
 	background-attachment: fixed;
 	background-repeat: repeat;
 	box-sizing: border-box;
 	height: 100%;
 	overflow: auto;
+	background-color: #102021;
 }
 
 html {
@@ -82,16 +82,15 @@ a.stub, a.new {
 }
 
 #mw-wrapper {
-	width: 60em;
+	width: 95%;
 	margin: 0 auto;
 	position: relative;
 }
 
 .mw-body {
-	margin-left: -1em;
-	padding: 0em 1em 2em 1em;
 	float: left;
-	background-color: #102021; /*IE8 backwards compatible*/
+	background: none !important;
+	background-color: #102021 !important; /*IE8 backwards compatible*/
 	background-color: rgba(16, 32, 33, 0.95) !important;
 	width: 100%;
 }
@@ -199,7 +198,7 @@ code {
 
 #p-personal {
 	position: absolute;
-	top: 1em;
+	top: 72px;
 	right: 0em;
 	width: 140px;
 	text-align: center;
@@ -207,34 +206,34 @@ code {
 
 #p-namespaces {
 	position: absolute;
-	top: 1em;
-	right: 27em;
+	top: -12px;
+	right: 0em;
 	width: 140px;
 	text-align: center;
 }
 
 #p-navigation {
 	position: absolute;
-	top: 1em;
-	right: 18em;
+	top: 16px;
+	right: 0em;
 	width: 140px;
 	text-align: center;
 }
 
 #p-tb {
 	position: absolute;
-	top: 1em;
-	right: 9em;
+	top: 44px;
+	right: 0em;
 	width: 140px;
 	text-align: center;
 }
 
 #p-search {
 	position: absolute;
-	top: 6em;
-	right: 0em;
-	width: 46em;
+	top: 120px;
+	right: 1em;
 	text-align: right;
+	width: 180px;
 }
 
 #p-logo {
@@ -258,6 +257,7 @@ div.jsprefs {
 	padding-left: 0.2em;
 	padding-right: 0.2em;
 	text-decoration: none;
+	font-size: medium;
 }
 
 .mw-portlet h3 a:visited, .mw-portlet h3 a{
@@ -266,8 +266,11 @@ div.jsprefs {
 
 .mw-portlet:hover ul {
 	display:block;  
-	z-index:500;
-}
+	position: fixed;
+	right: 180px;
+	top: 24px;
+	width: 10em;
+}}
 
 .editOptions, .jsprefs {
 	background-color: #19454a !important;;
