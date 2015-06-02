@@ -59,3 +59,24 @@
 	border-radius: 50% 50%;
 	box-shadow: black 0px 0px 5px;
 }
+
+.news {
+  float: left;
+  width: 30%;
+  box-sizing: border-box;
+}
+
+.newsbox {
+	border-style:solid;
+	border-width:2px;
+}
+
+.newsbox p {
+	padding: 5px;
+}
+
+.welcome {
+  float: left;
+  width: 70%;
+  box-sizing: border-box;
+}
