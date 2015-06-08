@@ -58,12 +58,19 @@ a:visited, .mw-body a.external:visited {
 	color: #559997;
 }
 
+a.stub, a.new {
+	color: #E40000;
+}
+
 a.new:visited, #p-personal a.new:visited {
 	color: #FF7315;
 }
 
-a.stub, a.new {
-	color: #E40000;
+a.external {
+	background-position: center right;
+	background-repeat: no-repeat;
+	background-image: url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%3E%3Cg%20transform%3D%22translate%28-826.429%20-698.791%29%22%3E%3Crect%20width%3D%225.982%22%20height%3D%225.982%22%20x%3D%22826.929%22%20y%3D%22702.309%22%20fill%3D%22%23fff%22%20stroke%3D%22%2306c%22%2F%3E%3Cg%3E%3Cpath%20d%3D%22M831.194%20698.791h5.234v5.391l-1.571%201.545-1.31-1.31-2.725%202.725-2.689-2.689%202.808-2.808-1.311-1.311z%22%20fill%3D%22%2306f%22%2F%3E%3Cpath%20d%3D%22M835.424%20699.795l.022%204.885-1.817-1.817-2.881%202.881-1.228-1.228%202.881-2.881-1.851-1.851z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+	padding-right: 13px;
 }
 
 .catlinks {
@@ -74,19 +81,6 @@ a.stub, a.new {
 	margin-top: 1em;
 }
 
-.mw-body a.external {
-	background-position: center right;
-	background-repeat: no-repeat;
-	background-image: url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22UTF-8%22%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2210%22%20height%3D%2210%22%3E%3Cg%20transform%3D%22translate%28-826.429%20-698.791%29%22%3E%3Crect%20width%3D%225.982%22%20height%3D%225.982%22%20x%3D%22826.929%22%20y%3D%22702.309%22%20fill%3D%22%23fff%22%20stroke%3D%22%2306c%22%2F%3E%3Cg%3E%3Cpath%20d%3D%22M831.194%20698.791h5.234v5.391l-1.571%201.545-1.31-1.31-2.725%202.725-2.689-2.689%202.808-2.808-1.311-1.311z%22%20fill%3D%22%2306f%22%2F%3E%3Cpath%20d%3D%22M835.424%20699.795l.022%204.885-1.817-1.817-2.881%202.881-1.228-1.228%202.881-2.881-1.851-1.851z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E);
-	padding-right: 13px;
-}
-
-#mw-wrapper {
-	width: 60em;
-	margin: 0 auto;
-	position: relative;
-}
-
 .mw-body {
 	margin-left: -1em;
 	padding: 0em 1em 2em 1em;
@@ -94,6 +88,12 @@ a.stub, a.new {
 	background-color: #102021; /*IE8 backwards compatible*/
 	background-color: rgba(16, 32, 33, 0.95) !important;
 	width: 100%;
+}
+
+#mw-wrapper {
+	width: 60em;
+	margin: 0 auto;
+	position: relative;
 }
 
 #pagehistory li.selected, .editform, .mw-content-text {
@@ -142,6 +142,11 @@ code {
 
 /* User Preferences und Menu */
 
+.prefsection {
+	position: relative;
+	top: -2em;
+}
+
 #preftoc li.selected {
 	border: 1px solid #559997;
 	border-bottom: none;			
@@ -149,10 +154,7 @@ code {
 }
 
 #preftoc {
-	width: 100%;
-	float: left;
 	clear: both;
-	background-image: none !important;
 }
 
 #preftoc li {
@@ -181,64 +183,9 @@ code {
 	color: #8cfbf7 !important;
 }
 
-.prefsection {
-	position: relative;
-	top: -2em;
-}
-
 #mw-prefs-form {
 	top: 12px;
 	position: relative;
-}
-
-#p-logo {
-	width: 10em;
-	clear: left;
-	float: left;
-}
-
-#p-personal {
-	position: absolute;
-	top: 1em;
-	right: 0em;
-	width: 140px;
-	text-align: center;
-}
-
-#p-namespaces {
-	position: absolute;
-	top: 1em;
-	right: 27em;
-	width: 140px;
-	text-align: center;
-}
-
-#p-navigation {
-	position: absolute;
-	top: 1em;
-	right: 18em;
-	width: 140px;
-	text-align: center;
-}
-
-#p-tb {
-	position: absolute;
-	top: 1em;
-	right: 9em;
-	width: 140px;
-	text-align: center;
-}
-
-#p-search {
-	position: absolute;
-	top: 6em;
-	right: 0em;
-	width: 46em;
-	text-align: right;
-}
-
-#p-logo {
-	text-align: center;
 }
 
 #preferences {
@@ -393,12 +340,12 @@ div.thumbinner {
 	overflow: hidden;
 }
 
-html .thumbimage {
+.thumbimage {
 	border: 1px solid #8cfbf7;
 	background-color: #FFF;
 }
 
-html .thumbcaption {
+.thumbcaption {
 	border: none;
 	text-align: left;
 	line-height: 1.4em;

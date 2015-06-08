@@ -45,9 +45,6 @@ class SkinResonator extends SkinTemplate {
 
 </script>"
 		);
-/*		$out->addHeadItem('bgimg', "<style>body {background-color: #102021;" .
-		"background: url('" . $GLOBALS['wgStylePath'] . "/Resonator/resources/bckgr.png');}</style>");
-*/
 		$out->addHeadItem('font-face', "<link rel=\"stylesheet\" type=\"text/css\" href=\"//fonts.googleapis.com/css?family=Coda\" />");
 		$out->addHeadItem('responsive', "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">");
 
@@ -169,7 +166,7 @@ class ResonatorTemplate extends BaseTemplate {
 
 					<h3><label for="searchInput"><?php $this->msg( 'search' ) ?></label></h3>
 
-					<?php echo $this->makeSearchInput( array( "id" => "searchInput", "size" => "35" ) ) ?>
+					<?php echo $this->makeSearchInput( array( "id" => "searchInput"/*, "size" => "35"*/ ) ) ?>
 					<?php echo $this->makeSearchButton( 'go' ) ?>
 
 				</form>

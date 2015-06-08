@@ -1,0 +1,76 @@
+/* User Preferences und Menu */
+
+#preftoc li {
+	border: 1px solid #559997;
+	float: left;
+	list-style-type: none;
+	padding: 0px 7px 0px 7px;
+	position: relative;
+	top: -39px;
+	left: -40px;
+}
+
+#p-logo {
+	width: 10em;
+	clear: left;
+	float: left;
+}
+
+#p-personal {
+	position: absolute;
+	top: 1em;
+	right: 0em;
+	width: 140px;
+	text-align: center;
+}
+
+#p-namespaces {
+	position: absolute;
+	top: 1em;
+	right: 27em;
+	width: 140px;
+	text-align: center;
+}
+
+#p-navigation {
+	position: absolute;
+	top: 1em;
+	right: 18em;
+	width: 140px;
+	text-align: center;
+}
+
+#p-tb {
+	position: absolute;
+	top: 1em;
+	right: 9em;
+	width: 140px;
+	text-align: center;
+}
+
+#p-search {
+	position: absolute;
+	top: 6em;
+	right: 0em;
+	width: 46em;
+	text-align: right;
+}
+
+#wpUploadDescription {
+	width: 45em;
+}
+
+textarea#wpInput, textarea#output {
+	width:65em;
+}
+
+div#contentSub p {
+	/*margin-bottom: -1em;*/
+	margin-top: -1em;
+}
+
+.redirectMsg p {
+  overflow: visible;
+  height: 0;
+  margin: 0.5em 0em 2em 1em;
+}

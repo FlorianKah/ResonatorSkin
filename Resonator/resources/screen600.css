@@ -1,0 +1,110 @@
+/* Page layout */
+
+
+#mw-wrapper {
+	width: 95%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.mw-body {
+	margin-left: -1em;
+	padding: 0em 1em 2em 1em;
+	float: left;
+	background-color: #102021; /*IE8 backwards compatible*/
+	background-color: rgba(16, 32, 33, 0.95) !important;
+	width: 100%;
+}
+
+
+/* User Preferences und Menu */
+
+#p-personal {
+	position: absolute;
+	top: 1em;
+	right: 0em;
+	width: 110px;
+	text-align: center;
+}
+
+#p-namespaces {
+	position: absolute;
+	top: 1em;
+	right: 7em;
+	width: 110px;
+	text-align: center;
+}
+
+#p-navigation {
+	position: absolute;
+	top: 1em;
+	right: 14em;
+	width: 110px;
+	text-align: center;
+}
+
+#p-tb {
+	position: absolute;
+	top: 1em;
+	right: 21em;
+	width: 110px;
+	text-align: center;
+}
+
+#p-search {
+	position: absolute;
+	top: 75px;
+	right: 0em;
+	text-align: right;
+	width: 225px;
+}
+
+.mw-portlet ul {
+	text-align: left;
+	font-size: smaller;
+	list-style-type: none;
+	padding-left: 5px;
+	border: 1px solid #8cfbf7;
+	background-color: black;
+	margin-top: -17px;
+	display:none;
+	box-shadow: 0px 0px 6px #8cfbf7;
+}
+
+#wpUploadDescription {
+	width: 45em;
+}
+
+.mw-notification {
+  padding: 0.25em 1em;
+  margin-bottom: 0.5em;
+  border: solid 1px #FEECB3;
+  color: #FEECB3;
+  background-color: #19454a !important;
+  cursor: pointer;
+}
+
+.warning {
+  color: #FEECB3;
+  list-style-type: none;
+}
+
+textarea#wpInput, textarea#output {
+	width:65em;
+}
+
+div#contentSub p {
+	/*margin-bottom: -1em;*/
+	margin-top: -1em;
+}
+
+.redirectMsg {
+	padding-top: 0px;
+	padding-bottom: 8px;
+}
+
+.redirectMsg p {
+  overflow: visible;
+  height: 0;
+  margin: 0.5em 0em 2em 1em;
+}

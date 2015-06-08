@@ -1,21 +1,5 @@
 /* Custom Styles */
 
-html,
-body {
-	font-family: 'Coda', Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	background: none;
-	background-color: #102021;
-	color: #c0c0c0;
-	background-attachment: fixed;
-	background-repeat: repeat;
-	box-sizing: border-box;
-	height: 100%;
-	overflow: auto;
-}
-
-
 .headline a, .headline a:hover, .headline a:visited, .headline a.external:visited, .headline {
 	color: #FFEDB4;
 	margin:0.3em;
