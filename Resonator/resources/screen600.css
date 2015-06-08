@@ -1,6 +1,5 @@
 /* Page layout */
 
-
 #mw-wrapper {
 	width: 95%;
 	margin: 0 auto;
@@ -16,21 +15,12 @@
 	width: 100%;
 }
 
-
 /* User Preferences und Menu */
-
-#p-personal {
-	position: absolute;
-	top: 1em;
-	right: 0em;
-	width: 110px;
-	text-align: center;
-}
 
 #p-namespaces {
 	position: absolute;
 	top: 1em;
-	right: 7em;
+	right: 21em;
 	width: 110px;
 	text-align: center;
 }
@@ -46,7 +36,15 @@
 #p-tb {
 	position: absolute;
 	top: 1em;
-	right: 21em;
+	right: 7em;
+	width: 110px;
+	text-align: center;
+}
+
+#p-personal {
+	position: absolute;
+	top: 1em;
+	right: 0em;
 	width: 110px;
 	text-align: center;
 }

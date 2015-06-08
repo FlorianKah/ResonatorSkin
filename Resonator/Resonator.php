@@ -46,11 +46,13 @@ $wgResourceModules['skins.resonator.styles'] = array(
 		'Resonator/resources/custom.css' => array( 'media' => 'screen' ),
 		
 		'Resonator/resources/screen320.css' => array( 'media' => 'screen and (min-width:320px) and (max-width:600px)' ),
+		'Resonator/resources/custom320.css' => array( 'media' => 'screen and (min-width:320px) and (max-width:600px)' ),
 
-		'Resonator/resources/custom320.css' => array( 'media' => 'screen and (min-width:320px) and (max-width:1014px)' ),
 		'Resonator/resources/screen600.css' => array( 'media' => 'screen and (min-width:600px) and (max-width:1014px)' ),
+		'Resonator/resources/custom600.css' => array( 'media' => 'screen and (min-width:600px) and (max-width:1014px)' ),
+
 		'Resonator/resources/screen1015.css' => array( 'media' => 'screen and (min-width:1015px)' ),
-		/*'Resonator/resources/table320.css' => array( 'media' => 'screen and (min-width:320px) and (max-width:1014px)' ),*/
+		'Resonator/resources/custom1015.css' => array( 'media' => 'screen and (min-width:1015px)' ),
 
 		
 	),

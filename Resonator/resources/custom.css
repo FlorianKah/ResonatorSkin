@@ -62,7 +62,6 @@
 
 .news {
   float: left;
-  width: 30%;
   box-sizing: border-box;
 }
 
@@ -77,6 +76,5 @@
 
 .welcome {
   float: left;
-  width: 70%;
   box-sizing: border-box;
 }
